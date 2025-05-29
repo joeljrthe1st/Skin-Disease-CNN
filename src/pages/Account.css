@@ -1,0 +1,57 @@
+.account-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+   
+  }
+  
+  .account-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 90px;
+  }
+  
+  .account-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .account-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .account-profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .account-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .account-signout-button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .account-signout-button:hover {
+    background-color: #d32f2f;
+  }
+  

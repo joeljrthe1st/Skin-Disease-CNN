@@ -1,0 +1,159 @@
+/* src/components/Header.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0d1b2e;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+  }
+  
+  .app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease;
+  }
+  
+  .active-link {
+    color: #2563eb; /* or any highlight color you prefer */
+    font-weight: bold;
+  }
+  
+  .nav-links li a:hover {
+    color: #3b82f6;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .account-icon {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .account-icon:hover {
+    color: #3b82f6;
+  }
+  
+  .auth-link {
+    margin-top: 0.5rem;
+  }
+  
+  .auth-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .auth-link a:hover {
+    color: #3b82f6;
+    text-decoration: underline;
+  }
+  
+  .navbar-user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+  
+  .navbar-profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .navbar-display-name {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .navbar-user-info:hover{
+    text-decoration: none;
+  }
+
+/*  */
+  
+ /* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem; /* Adjust padding for mobile */
+  }
+
+  .navbar-left {
+    flex-direction: row; /* Keep navbar items in a row */
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .app-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center; /* Center the title on smaller screens */
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: row; /* Keep the links in a row */
+    gap: 1.5rem;
+    width: auto; /* Allow the links to fit inline */
+    margin-top: 1rem;
+    justify-content: center; /* Center the links */
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    width: auto; /* Prevent links from stretching to fill the container */
+    text-align: center;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+}
